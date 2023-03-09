@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title></title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Salesboard 🔔</h1>
+            <div class="mask">
+                <img src="images/Mac-attack.webp">
+            </div>
+            <div class="btn-container">
+                <button id="star-btn">⭐️</button>
+                <button id="fire-btn">🔥</button>
+            </div>
+            <section class="display-container">
+                <h2 >Live Sales - <span id="sales-counter">0</span></h2>
+                <div id="sales-display" class="display">
+                   <!-- sales display rendered here --> 
+                </div>
+            </section>
+            <section class="display-container">
+                <h2>Live Achievements - <span id="achievements-counter">0</span></h2>
+                <div id="achievements-display" class="display">
+                    <!-- achievements display rendered here -->
+                </div>
+            </section>
+            <section class="display-container-lower">
+                <div>
+                    <h2>Total Revenue</h2>
+                    <div id="revenue-display" class="display-lower">
+                        <!-- achievements display rendered here -->
+                    </div>
+                </div>
+                <div>
+                    <h2>Total Commission</h2>
+                    <div id="commission-display" class="display-lower">
+                        <!-- achievements display rendered here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
