@@ -23,10 +23,14 @@ html, body {
     margin: 40px auto;
 }
 
+h1 {
+    margin-bottom: 15px;
+}
+
 .mask {
     display: inline-block;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     overflow: hidden;
     border: solid 5px #9E4770;
@@ -34,26 +38,32 @@ html, body {
 
 img {
     max-width: 100%;
+    
 }
 
 .btn-container {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 button {
     font-size: 25px;
-    padding: 5px 30px;
+    padding: 10px 40px;
     border-radius: 5px;
     border: none;
     background: #9E4770;
-    margin: 0 1px;
+    margin: 0 2px;
+}
+
+h2 {
+    margin-bottom: 5px;
+    font-size: 20px;
 }
 
 .display-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px 0px;
+    margin: 20px 0px;
 }
 
 .display, .display-lower {
@@ -65,9 +75,9 @@ button {
     background: #44354A;
     border-radius: 50px;
     text-align: left;
-    padding: 0px 0px;
     overflow: hidden;
-    text-indent: 10px;   
+    text-indent: 10px;
+       
 }
 
 .display-container-lower {

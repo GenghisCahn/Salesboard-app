@@ -17,18 +17,18 @@ let giveAchievement = true
 document.getElementById('star-btn').addEventListener('click',function(){
     sales.push(productA.emoji)
     salesRender()
+    revenueRender(productA.revenue)
+    commissionRender(productA.commission)
     achievementsRender()
-    revenueRender()
-    commissionRender()
 })
 
 
 document.getElementById('fire-btn').addEventListener('click',function(){ 
     sales.push(productB.emoji)
     salesRender()
+    revenueRender(productB.revenue)
+    commissionRender(productB.commission)
     achievementsRender()
-    revenueRender()
-    commissionRender()
 })
 
 
@@ -44,11 +44,7 @@ function salesRender(){
 
 function achievementsRender() {
     achievementsDisplay.textContent = ''
-    for(let i = 0; i < achievements.length; i++){
-        achievementsDisplay.textContent += achievements[i]    
-    }
     
-    achievementsCounter.textContent = achievements.length
     
       if(sales.length === 1){
         achievements.push("🔔")
@@ -58,14 +54,22 @@ function achievementsRender() {
         achievements.push("💰")
         giveAchievement = false
     }
+    
+    
+    for(let i = 0; i < achievements.length; i++){
+        achievementsDisplay.textContent += achievements[i]    
+    }
+    
+    achievementsCounter.textContent = achievements.length
+    
 }
 
-function revenueRender(){
-    totalRevenue += productA.revenue
+function revenueRender(revenue){
+    totalRevenue += revenue
     revenueDisplay.textContent = "$ " + totalRevenue
 }
 
-function commissionRender(){
-    totalCommission += productA.commission
+function commissionRender(commission){
+    totalCommission += commission
     commissionDisplay.textContent = "$ " + totalCommission
 }
